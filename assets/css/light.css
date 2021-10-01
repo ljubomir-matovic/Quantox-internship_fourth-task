@@ -1,1 +1,17 @@
+:root {
+    --gray: #697c9a;
+    --graylish-blue: #4b6a9b;
+    --light-dark: #2b3442;
+    --dirty-white: #f6f8ff;
+    --light: #fefefe;
+}
+.light {
+    background-color: var(--dirty-white);
+}
 
+.light main {
+    background-color: var(--light);
+}
+.light form {
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+}
