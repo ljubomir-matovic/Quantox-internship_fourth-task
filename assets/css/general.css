@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
 }
 body {
     font-family: "Space Mono", monospace;
@@ -40,7 +41,6 @@ h4 {
 }
 button {
     background-color: var(--blue);
-    cursor: pointer;
     color: var(--white);
     width: 106px;
     height: 50px;
@@ -58,7 +58,6 @@ a {
 }
 a:hover {
     text-decoration: underline;
-    cursor: pointer;
 }
 .error {
     font-weight: 700;
@@ -66,11 +65,38 @@ a:hover {
     line-height: 22px;
     color: var(--red);
 }
-#theme h4 {
+#theme,
+button,
+a,
+input {
+    cursor: pointer;
+}
+input {
+    border: none;
+    outline: none;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    padding-left: 10px;
+}
+#theme span {
     text-transform: uppercase;
 }
-form {
+form,
+main {
     border-radius: 15px;
+}
+.search {
+    width: 24px;
+    height: 24px;
+}
+#theme span {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: right;
+    letter-spacing: 2.5px;
 }
 @media screen and (max-width: 500px) {
     button {

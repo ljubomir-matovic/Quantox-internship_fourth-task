@@ -1,4 +1,13 @@
 :root {
-    --dark: #f6f8ff;
-    --dark-blue: #1e2a47;
+    --dark: rgb(20, 29, 47);
+    --dark-blue: rgb(30, 42, 71);
+}
+.dark {
+    background-color: var(--dark);
+    color: var(--white);
+}
+.dark form,
+.dark main,
+.dark input {
+    background-color: var(--dark-blue);
 }
