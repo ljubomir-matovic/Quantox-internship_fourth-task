@@ -9,10 +9,6 @@ header {
     flex-direction: row;
     align-items: center;
 }
-#theme > img {
-    width: 20px;
-    height: 20px;
-}
 .table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -20,6 +16,7 @@ header {
 form {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-grow: 1;
     padding: 10px;
 }
@@ -38,7 +35,22 @@ body {
     display: flex;
     flex-direction: column;
 }
-@media screen and (min-width: 800px) {
+.item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+/*Desktop*/
+@media screen and (min-width: 1000px) {
     .container {
         width: 730px;
         gap: 25px;
@@ -46,5 +58,17 @@ body {
     input {
         height: 100%;
         width: 100%;
+    }
+    main {
+        padding: 30px;
+    }
+    .error {
+        margin-right: 10px;
+    }
+}
+/*Mobile*/
+@media screen and (max-width: 600px) {
+    .footer {
+        grid-template-columns: 1fr;
     }
 }

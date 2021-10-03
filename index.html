@@ -17,7 +17,7 @@
       <h1 class="dev">devfinder</h1>
       <section id="theme">
         <span>Dark</span>
-        <img src="./assets/images/icon-moon.svg" alt="moon and sun">
+        <img src="./assets/images/icon-moon.svg" alt="moon and sun" class="icon">
       </section>
     </header>
     <form>
@@ -25,6 +25,7 @@
         <img src="./assets/images/icon-search.svg" alt="search" class="search">
         <input type="text" name="text" placeholder="Search GitHub username..." required>
       </section>
+      <p class="error hide">No results</p>
       <button>Search</button>
     </form>
     <main>
@@ -36,7 +37,7 @@
             <h1 class="name">Octocat</h1>
             <h3 class="username">@octocat</h3>
           </section>
-          <section class="date"></section>
+          <section class="date">Joined 25 Jan 2011</section>
         </section>
       <section class="bio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo architecto cum quibusdam, sunt pariatur, ratione aliquid accusantium minus eum quia deserunt repellendus dicta laudantium? Deserunt suscipit vel soluta sit enim!</section>
       <section class="table">
@@ -48,10 +49,26 @@
         <h1 class="following">10</h1>
       </section>
       <section class="footer">
-        <section class="left-footer">
-          <section class="item"></section>
+        <section class="footer-item">
+          <section class="item">
+            <img src="./assets/images/icon-location.svg" alt="location" >
+            <p>San Francisco</p>
+          </section>
+          <section class="item">
+            <img src="./assets/images/icon-website.svg" alt="website" class="icon">
+            <a href="">https://github.blog</a>
+          </section>
         </section>
-        <section class="right-footer"></section>
+        <section class="footer-item">
+          <section class="item">
+            <img src="./assets/images/icon-twitter.svg" alt="twitter" class="icon">
+            <a href="">Not available</a>
+          </section>
+          <section class="item">
+            <img src="./assets/images/icon-company.svg" alt="company" class="icon">
+            <p>@github</p>
+          </section>
+        </section>
       </section>
       </section>
     </main>

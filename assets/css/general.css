@@ -91,6 +91,10 @@ main {
     width: 24px;
     height: 24px;
 }
+.icon {
+    width: 20px;
+    height: 20px;
+}
 #theme span {
     font-weight: bold;
     font-size: 13px;
@@ -98,22 +102,30 @@ main {
     text-align: right;
     letter-spacing: 2.5px;
 }
+.avatar {
+    width: 117px;
+    height: 117px;
+    border-radius: 50%;
+    border: none;
+}
+.hide {
+    display: none;
+}
 /*Desktop*/
-@media screen and (min-width: 800px) {
-    .header .avatar {
-        display: none;
-    }
+@media screen and (min-width: 100px) {
 }
 /*Mobile and tablet*/
-@media screen and (max-width: 799px) {
-    main > .avatar {
-        display: none;
-    }
+@media screen and (max-width: 999px) {
 }
 /*Mobile*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     button {
         width: 86px;
         height: 46px;
+    }
+    .avatar {
+        width: 117px;
+        height: 117px;
+        border-radius: 50%;
     }
 }
