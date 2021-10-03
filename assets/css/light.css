@@ -36,3 +36,6 @@
 .light #theme:hover img {
     filter: brightness(20%);
 }
+.light .table {
+    background-color: var(--dirty-white);
+}

@@ -34,6 +34,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    margin: 50px auto;
 }
 .item {
     display: flex;
@@ -64,6 +65,36 @@ body {
     }
     .error {
         margin-right: 10px;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-row-gap: 10px;
+        grid-template-areas:
+            "img header"
+            "img bio"
+            "a table"
+            "a footer";
+    }
+    .avatar {
+        grid-area: img;
+    }
+    .header {
+        grid-area: header;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .bio {
+        grid-area: bio;
+    }
+    .table {
+        grid-area: table;
+    }
+    .footer {
+        grid-area: footer;
     }
 }
 /*Mobile*/

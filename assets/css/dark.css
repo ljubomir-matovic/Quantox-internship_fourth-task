@@ -14,3 +14,15 @@
 .dark #theme:hover {
     filter: brightness(50%);
 }
+.dark .table {
+    background-color: var(--dark);
+}
+.dark .icon {
+    filter: brightness(500%);
+}
+.dark input {
+    color: inherit;
+}
+.dark input::placeholder {
+    color: inherit;
+}
