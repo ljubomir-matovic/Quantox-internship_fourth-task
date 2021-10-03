@@ -1,5 +1,5 @@
 :root {
-    --dark: rgb(20, 29, 47);
+    --dark: hsl(220, 40%, 13%);
     --dark-blue: rgb(30, 42, 71);
 }
 .dark {
@@ -10,4 +10,7 @@
 .dark main,
 .dark input {
     background-color: var(--dark-blue);
+}
+.dark #theme:hover {
+    filter: brightness(50%);
 }

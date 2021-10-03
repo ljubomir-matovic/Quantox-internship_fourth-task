@@ -1,11 +1,10 @@
 const baseUrl = "https://api.github.com/users/";
 const form = document.querySelector("form");
-const button = document.querySelector("button");
 const input = document.querySelector(`[name="text"]`);
-const clickHandler = (e) => {
-    e.preventDefault();
+const name = document.querySelector(".name");
+const bio = document.querySelector(".bio");
+const avatar = document.querySelectorAll(".avatar");
 
-};
 async function submitHandler (e){
     e.preventDefault();
     let response = await fetch(baseUrl + input.value);
@@ -16,7 +15,6 @@ async function submitHandler (e){
     let result = await response.json();
     console.log(result);
 }
-button.addEventListener("keypress", clickHandler);
 form.addEventListener("submit", submitHandler);
 
 

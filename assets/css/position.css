@@ -28,16 +28,18 @@ form {
     display: flex;
     align-items: center;
 }
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
 @media screen and (min-width: 800px) {
-    body {
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
     .container {
-        display: flex;
-        flex-direction: column;
         width: 730px;
         gap: 25px;
     }

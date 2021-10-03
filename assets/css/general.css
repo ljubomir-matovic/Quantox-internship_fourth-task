@@ -98,6 +98,19 @@ main {
     text-align: right;
     letter-spacing: 2.5px;
 }
+/*Desktop*/
+@media screen and (min-width: 800px) {
+    .header .avatar {
+        display: none;
+    }
+}
+/*Mobile and tablet*/
+@media screen and (max-width: 799px) {
+    main > .avatar {
+        display: none;
+    }
+}
+/*Mobile*/
 @media screen and (max-width: 500px) {
     button {
         width: 86px;

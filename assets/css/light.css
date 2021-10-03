@@ -30,15 +30,9 @@
 .light #theme span {
     color: var(--graylish-blue);
 }
-.light #theme img {
-    fill: var(--graylish-blue) !important;
-    filter: invert(42%) sepia(55%) saturate(438%) hue-rotate(177deg)
-        brightness(83%) contrast(86%);
-}
 .light #theme:hover span {
     color: #222731;
 }
-.light #theme:hover object {
-    fill: #222731;
-    filter: none;
+.light #theme:hover img {
+    filter: brightness(20%);
 }
