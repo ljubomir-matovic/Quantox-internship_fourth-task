@@ -118,21 +118,42 @@ a {
 .not-available {
     opacity: 0.5;
 }
-/*Desktop*/
-@media screen and (min-width: 100px) {
-}
-/*Mobile and tablet*/
-@media screen and (max-width: 999px) {
-}
 /*Mobile*/
 @media screen and (max-width: 600px) {
+    h1 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    h4 {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    input {
+        font-size: 13px;
+    }
+    input::placeholder {
+        font-size: 13px;
+    }
+    body {
+        font-size: 13px;
+        line-height: 25px;
+    }
+    .error {
+        font-size: 13px;
+        line-height: 15px;
+    }
     button {
         width: 86px;
         height: 46px;
+        font-size: 14px;
     }
     .avatar {
         width: 117px;
         height: 117px;
         border-radius: 50%;
+    }
+    .table {
+        padding: 10px;
     }
 }
