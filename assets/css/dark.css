@@ -1,0 +1,28 @@
+:root {
+    --dark: hsl(220, 40%, 13%);
+    --dark-blue: rgb(30, 42, 71);
+}
+.dark {
+    background-color: var(--dark);
+    color: var(--white);
+}
+.dark form,
+.dark main,
+.dark input {
+    background-color: var(--dark-blue);
+}
+.dark #theme:hover {
+    filter: brightness(50%);
+}
+.dark .table {
+    background-color: var(--dark);
+}
+.dark .icon {
+    filter: brightness(500%);
+}
+.dark input {
+    color: inherit;
+}
+.dark input::placeholder {
+    color: inherit;
+}

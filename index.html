@@ -3,24 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <title></title>
+  <meta name="author" content="Ljubomir Matovic">
+  <base target="_blank">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./assets/css/general.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/position.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/light.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/dark.css">
+  <title>Github search</title>
 </head>
-<body>
-
-  devfinder
-
-  Light
-  Dark
-
-  Search GitHub username...
-  Search
-
-  Joined
-
-  Repos
-  Followers
-  Following
-
+<body class="light">
+  <section class="container">
+    <header>
+      <h1 class="dev">devfinder</h1>
+      <section id="theme">
+        <span>Dark</span>
+        <img src="./assets/images/icon-moon.svg" alt="moon and sun" class="icon">
+      </section>
+    </header>
+    <form>
+      <section class="input-container">
+        <img src="./assets/images/icon-search.svg" alt="search" class="search">
+        <input type="text" name="text" placeholder="Search GitHub username..." required>
+      </section>
+      <p class="error hide">No results</p>
+      <button>Search</button>
+    </form>
+    <main>
+      <img src="https://th.bing.com/th/id/OIP.E194y6QEO-_OziOQkHuHeAHaHa?w=199&h=199&c=7&r=0&o=5&pid=1.7" alt="avatar" class="avatar">
+        <section class="header">
+          <section class="names">
+            <h1 class="name">Octocat</h1>
+            <h3 class="username">@octocat</h3>
+          </section>
+          <section>Joined <span class="date">25 Jan 2011</span></section>
+        </section>
+      <section class="bio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo architecto cum quibusdam, sunt pariatur, ratione aliquid accusantium minus eum quia deserunt repellendus dicta laudantium? Deserunt suscipit vel soluta sit enim!</section>
+      <section class="table">
+        <h4>Repos</h4>
+        <h4>Followers</h4>
+        <h4>Following</h4>
+        <h1 class="repos">8</h1>
+        <h1 class="followers">4000</h1>
+        <h1 class="following">10</h1>
+      </section>
+      <section class="footer">
+        <section class="footer-item">
+          <section class="item">
+            <img src="./assets/images/icon-location.svg" alt="location"class="icon" >
+            <p class="location">San Francisco</p>
+          </section>
+          <section class="item">
+            <img src="./assets/images/icon-website.svg" alt="website" class="icon">
+            <a href="" class="blog">https://github.blog</a>
+          </section>
+        </section>
+        <section class="footer-item">
+          <section class="item not-available">
+            <img src="./assets/images/icon-twitter.svg" alt="twitter" class="icon">
+            <a href="" class="twitter">Not available</a>
+          </section>
+          <section class="item">
+            <img src="./assets/images/icon-company.svg" alt="company" class="icon">
+            <p class="company">@github</p>
+          </section>
+        </section>
+      </section>
+    </main>
+  </section>
+  <noscript>Please enable Javascript!</noscript>
+  <script src="./assets/js/search.js"></script>
 </body>
 </html>
